@@ -3,13 +3,13 @@
        $APPID= "botlee/"; //enter your appid
      $KEY = "lEpYh9TkAaJ9wzW"; //enter your key
     $SECRET = "4jpe0OIRc0F2NbClENn6fgkfX"; //enter your secret
-    $Topic = "NodeMCU1"; 
+    $Topic = "$topic"; 
       put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
   }
  function getMqttfromlineMsg($Topic,$lineMsg){
  
-    $pos = strpos($lineMsg, "CHECK");
+    $pos = strpos($lineMsg, ":");
     if($pos){
       $splitMsg = explode(":", $lineMsg);
       $topic = $splitMsg[0];
