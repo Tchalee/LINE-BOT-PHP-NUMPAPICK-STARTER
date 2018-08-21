@@ -3,7 +3,7 @@
        $APPID= "botlee/"; //enter your appid
      $KEY = "lEpYh9TkAaJ9wzW"; //enter your key
     $SECRET = "4jpe0OIRc0F2NbClENn6fgkfX"; //enter your secret
-    $Topic = "$topic"; 
+    $Topic = "NodeMCU1"; 
       put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
   }
