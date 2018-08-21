@@ -34,5 +34,5 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "HI Chalee";
+echo "OK3";
 ?>
